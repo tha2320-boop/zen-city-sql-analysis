@@ -6,7 +6,7 @@ Team project by **Telem Azaria** and **Daniel Joseph** · Data Analyst with AI, 
 
 **My part (Telem):** data cleaning, writing the SQL script in BigQuery, building the presentation and the interactive station map.
 
-[Interactive station map](https://tha2320-boop.github.io/zen-city-map) · [Class presentation](https://tha2320-boop.github.io/zen-city-presentation) · [Full SQL script](sql/zen_city_analysis.sql) · [Project document (PDF)](docs/project_document.pdf)
+[Interactive station map](https://tha2320-boop.github.io/zen-city-map) · [Class presentation](https://tha2320-boop.github.io/zen-city-presentation) · [Full SQL script](zen_city_analysis.sql) · [Project document (PDF)](project_document.pdf)
 
 ---
 
@@ -99,16 +99,13 @@ A series of all Q1 Fridays at station 2498 (excluding the Spring Break Friday), 
 
 Google BigQuery (SQL: CTEs, window functions, `UNNEST`, `APPROX_QUANTILES`, least-squares regression) · Microsoft Excel (pivot tables, histogram, Pareto chart) · AI assistant (metric design and validation)
 
-## Repository structure
+## Repository files
 
-```
-├── sql/
-│   └── zen_city_analysis.sql    Commented SQL script: profiling, master cleaning CTE, all analysis and forecast queries
-├── docs/
-│   ├── project_document.pdf     Full project document (10 pages)
-│   └── presentation.pdf         Class presentation (7 slides)
-└── data/
-    ├── raw/                     Original tables exported from BigQuery (rentals, station_info)
-    ├── cleaned_data.xlsx        Clean dataset (16,578 trips)
-    └── analysis_workbook.xlsx   Excel verification: pivot tables, histogram, Pareto chart
-```
+| File | What's inside |
+|---|---|
+| [`zen_city_analysis.sql`](zen_city_analysis.sql) | Commented SQL script: profiling, master cleaning CTE, all analysis and forecast queries |
+| [`project_document.pdf`](project_document.pdf) | Full project document (10 pages) |
+| [`presentation.pdf`](presentation.pdf) | Class presentation (7 slides) |
+| [`cleaned_data.xlsx`](cleaned_data.xlsx) | Clean dataset (16,578 trips) |
+| [`analysis_workbook.xlsx`](analysis_workbook.xlsx) | Excel verification: pivot tables, histogram, Pareto chart |
+| [`rentals.xlsx`](rentals.xlsx), [`station_info.xlsx`](station_info.xlsx) | Original tables exported from BigQuery |
